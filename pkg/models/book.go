@@ -3,7 +3,7 @@ package models
 import (
 	config "Data/pkg/confgi"
 
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 var db *gorm.DB
@@ -22,7 +22,6 @@ func init() {
 }
 
 func (b *Book) CreateBook() *Book {
-	db.NewRecord(b)
 	db.Create(&b)
 	return b
 }
