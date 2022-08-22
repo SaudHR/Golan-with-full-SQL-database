@@ -6,7 +6,6 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	_ "gorm.io/driver/sqlite"
 )
 
 func main() {
